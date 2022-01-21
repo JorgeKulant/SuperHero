@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SuperHeroList</string>
+    <string name="spiderman">Spiderman</string>
+    <string name="peter_parker">Peter Parker</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="marvel">Marvel</string>
+</resources>
