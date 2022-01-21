@@ -2,6 +2,7 @@ package com.example.superherolist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,7 +20,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener{
         SuperHero("Green Lantern", "Alan Scott", "DC", "https://www.latercera.com/resizer/CxTUjEZn_TfizsK_dZUYwbMZ2y4=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/3ELACAM7LRF7NONYW2OJJ2FAPQ.jpg","Linterna Verde (en inglés: Green Lantern) es el alias de varios superhéroes de la ficción del Universo DC, de la editorial DC Comics, los cuales se caracterizan por portar un anillo de poder y tener la capacidad de crear manifestaciones de luz sólida con dichos anillos.\n" +
                 "\n" +"El primer Linterna Verde (Alan Scott) hizo su debut en julio de 1940 en el All-American Comics #16 (portada de Sheldon Moldoff) durante la Edad de Oro del Cómic estadounidense.1 Su creación se la debemos al guionista Bill Finger y al dibujante Martín Nodell."),
         SuperHero("Wonder Woman", "Princess Diana", "DC", "https://www.funidelia.es/blog/wp-content/uploads/2016/08/wonderwoman.png","La Mujer Maravilla (en inglés: Wonder Woman) es una superheroína ficticia creada por William Moulton Marston para la editorial DC Comics. Es una princesa guerrera de las Amazonas, pueblo ficticio basado en el de las amazonas de la mitología griega. En su tierra natal es conocida como la princesa Diana de Temiscira pero fuera de esta utiliza la identidad secreta de Diana Prince. Está dotada de una amplia gama de poderes superhumanos y habilidades de combate de batalla superiores, gracias a sus dones obtenidos de los dioses y su amplio entrenamiento. Ella posee un gran arsenal de armas, incluyendo entre las principales el Lazo de la Verdad, un par de brazaletes mágicos indestructibles, su tiara, que sirve como arma, y en algunos relatos, en la edad de oro, tuvo un avión invisible. Pero más adelante, se le fue mostrando con la capacidad de volar cada vez con mayor frecuencia por lo que el avión invisible fue dejando de utilizarse.")
-
     )
     val adapter=HeroAdapter(superheros)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,5 +54,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener{
 
 
 }
+
 
 
