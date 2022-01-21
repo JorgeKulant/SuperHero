@@ -69,7 +69,7 @@ class HeroAdapter (var items:MutableList<SuperHero>):RecyclerView.Adapter<HeroAd
     fun filter(text: String){
         var collect= mutableListOf<SuperHero>()
         var prevIndex = items.size
-        items.clear()   //primero limpiamos la búsqueda
+        items.clear()
         notifyItemRangeRemoved(0, prevIndex)
 
         if(text.isEmpty()){
